@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ec4899;
+  --color-surface: #111126;
+  --color-background: #050510;
+  --color-text: #ffffff;
+  --color-muted: #94a3b8;
+  --color-accent: #8b5cf6;
+  
+  --font-body: var(--font-outfit);
+  --font-title: var(--font-outfit);
+}
+
+@layer utilities {
+  .font-title {
+    font-family: var(--font-title);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+  }
+
+  .neon-glow-accent {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+  }
+
+  .border-neon {
+    border: 1px solid #ec4899;
+  }
+
+  .border-accent {
+    border: 1px solid #8b5cf6;
+  }
+
+  .anime-card-glow {
+    box-shadow: 0 0 40px rgba(236, 72, 153, 0.2), 0 0 80px rgba(139, 92, 246, 0.1);
+  }
+
+  .neon-border-box {
+    position: relative;
+  }
+
+  .neon-border-box::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #ec4899, #8b5cf6, #06b6d4);
+    z-index: -1;
+    border-radius: 1.5rem;
+    opacity: 0.7;
+    pointer-events: none;
+  }
+}

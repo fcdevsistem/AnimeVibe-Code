@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import RatingModal from '@/components/RatingModal';
 import AnimeGrid from '@/components/AnimeGrid';
 import ExpandableDescription from '@/components/ExpandableDescription';
@@ -22,9 +21,6 @@ export default async function Home() {
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1578632292335-df3abbb0d586?auto=format&fit=crop&q=80&w=1920&h=1080')" }}
         />
         <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#050510] via-[#0a0a1f]/80 to-transparent" />
-        
-        {/* Top Navbar */}
-        <Navbar />
 
         {/* Heavy vignette for neon glow pop effect */}
         <div className="absolute inset-0 z-0 pointer-events-none shadow-[inset_0_0_200px_rgba(5,5,16,1)]" />
